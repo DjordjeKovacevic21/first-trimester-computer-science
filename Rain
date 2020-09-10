@@ -1,0 +1,25 @@
+
+float x1 = 0;
+float y1 = 0;
+float speed1 = 3;
+
+void setup(){ 
+ size(600,600);
+ x1 = random(0, width);
+ y1 = random(0,height);
+}
+
+void draw(){ 
+  background(255,255,255);
+ellipse(x1,y1,20,20);
+ fill( 7,245,243);
+ 
+ y1= y1 + speed1;
+
+if(y1 > height){ 
+  y1 = 0;
+  x1 = random (0,width);
+  speed1 = speed1 + 1;
+ }}
+
+
