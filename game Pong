@@ -1,0 +1,47 @@
+float x1 = random(200,300);
+float y1 = random(200,300);
+float speed1 = 1;
+int gameOver = 0;
+float barx = 0;
+float drift = 3;
+
+
+
+PFont myFont;
+float score = 0;
+float speedtext = 3;
+
+void setup(){
+  size(500,500);
+  myFont = createFont("",34);
+  textFont(myFont);
+  fill(0);
+  
+}
+
+
+void draw() { 
+  background(255,255,255);
+  ellipse(x1,y1, 20, 20);
+  text(score, 0,40);
+  y1 = y1+ speed1;
+  x1 = x1 + drift;
+  barx = mouseX;
+  rect(barx, 400, 60, 10);
+  rect(x1-30, 50, 60, 10);
+  if((y1 > 400) && (x1>barx) && (x1<barx+60) && ( y1 < 420)){
+   speed1= speed1 * -1;
+   
+ }
+if(x1>width|| x1<0){
+ drift=drift *-1; 
+}
+if((y1 > 50) && ( y1 < 60)){
+   speed1= speed1 * -1;
+   
+ }
+ if(y1>500){
+   score = score -1;
+ }
+}
+
