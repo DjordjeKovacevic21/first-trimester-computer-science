@@ -1,0 +1,82 @@
+  //this is where i create a variablt to hold my new object.
+Object_name. object_instance;
+
+
+void setup(){
+  //this is where i construct and initialize my object
+  object_instance = new Object_Name(SET PROPERTIES HERE)
+}
+
+void draw(){
+  //This is where i can interact with the object and use its methods.
+  object_instance.var1 = 100;
+
+  object_instance.method_name();
+  }
+
+class Object_name {
+  //this is where I will declare all of my variables
+  //that are properties of the object
+  //for example
+  float var1;
+  boolean var2;
+
+  //this is where i build the constructer.
+  object_name(float,thempInput){
+ //this is where i use temp values to set the initial value of my parameters(var1,var2,etc...)
+}
+
+
+  //thisis where i define the methods for my obkest.
+  void method_name(float, tempInput){
+  
+  return(var to return);
+    }
+   }
+   
+   
+   ------------------------------EXAMPLE----------------------------------------------------------------------------------------------------------------------------
+Ball ball1;
+
+void setup(){
+  ball1= new ball(100,100,color(0,0,255));
+}
+
+void.draw();
+  ball1.display();
+}
+
+class Ball{
+  float xpos;
+  float ypos;
+  float size;
+  float c1;
+
+  Ball(float tempX, float tempY,float tempSize, float tempC){
+   xpos=tempX;
+   ypos=tempY;
+   size=tempSize;
+   c1=tempC;
+}
+
+
+void display(){
+  fill(c1);
+  ellipse(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
